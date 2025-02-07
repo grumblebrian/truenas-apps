@@ -1,5 +1,4 @@
-# MinIO
+# MeshCentral
 
-[MinIO](https://min.io) is a High Performance Object Storage released under the AGPLv3 License.
-It is API compatible with Amazon S3 cloud storage service. Use MinIO to build high performance infrastructure
-for machine learning, analytics and application data workloads.
+[MeshCentral](https://meshcentral.com) is the open source, multi-platform, self-hosted, feature packed web
+site for remote device management.
