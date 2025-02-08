@@ -3,7 +3,7 @@ resources:
     cpus: 2.0
     memory: 4096
 
-minio:
+meshcentral:
   root_user: minio
   root_password: minio123
   extra_args: []

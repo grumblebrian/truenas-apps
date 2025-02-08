@@ -20,8 +20,8 @@
 {% set proto = "https" if values.network.certificate_id else "http" %}
 {% set envs = namespace(x={
   "MC_HOST_health": "%s://localhost:%d" | format(proto, values.network.api_port),
-  "MINIO_ROOT_USER": values.minio.root_user,
-  "MINIO_ROOT_PASSWORD": values.minio.root_password,
+  "MINIO_ROOT_USER": values.meshcentral.root_user,
+  "MINIO_ROOT_PASSWORD": values.meshcentral.root_password,
 }) %}
 
 {% set cmd = namespace(x=[
@@ -59,7 +59,7 @@
   {% endif %}
 {% endif %}
 
-{% for arg in values.minio.extra_args %}
+{% for arg in values.meshcentral.extra_args %}
   {% do cmd.x.append(arg) %}
 {% endfor %}
 
@@ -67,7 +67,7 @@
 {% for key, value in envs.x.items() %}
   {% do c1.environment.add_env(key, value) %}
 {% endfor %}
-{% do c1.environment.add_user_envs(values.minio.additional_envs) %}
+{% do c1.environment.add_user_envs(values.meshcentral.additional_envs) %}
 
 {% do c1.ports.add_port(values.network.console_port, values.network.console_port) %}
 {% do c1.ports.add_port(values.network.api_port, values.network.api_port) %}
