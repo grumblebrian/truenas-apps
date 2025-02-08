@@ -1,9 +1,10 @@
 images:
   image:
-    repository: minio/minio
-    tag: RELEASE.2025-02-03T21-03-04Z
+    repository: typhonragewind/meshcentral
+    tag: mongodb-1.1.38
 
 consts:
-  minio_container_name: minio
+  meshcentral_container_name: meshcentral
+  mongodb_container_name: mongodb
   perms_container_name: permissions
-  certs_dir: /etc/minio/certs
+  certs_dir: /opt/meshcentral/meshcentral-data
