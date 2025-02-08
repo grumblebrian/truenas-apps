@@ -1,7 +1,10 @@
 images:
-  image:
+  meshcentral:
     repository: typhonragewind/meshcentral
     tag: mongodb-1.1.38
+  mongodb:
+    repository: mongo
+    tag: 8-noble
 
 consts:
   meshcentral_container_name: meshcentral
