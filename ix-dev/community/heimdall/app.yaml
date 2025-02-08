@@ -32,7 +32,7 @@ run_as_context:
   uid: 0
   user_name: root
 screenshots: []
-sources: 
+sources:
 - https://github.com/linuxserver/Heimdall
 - https://github.com/linuxserver/docker-heimdall
 title: Heimdall
